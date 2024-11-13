@@ -22,3 +22,6 @@ This SDK contains drivers and example code related to the control card and where
 This driver is necessary for your computer and Code Composer Studio to be able to recognize the board and connect to the onboard debugger. [Link](https://software-dl.ti.com/ccs/esd/documents/xdsdebugprobes/emu_xds_software_package_download.html)
 ### Clang Compiler Drivers
 This is the compiler is used in the example codes of the SDK and within the example in this repository. [Link](https://www.ti.com/tool/download/ARM-CGT-CLANG/4.0.0.LTS)
+
+## HwiP API Drivers
+To make a hardware interrupt for the AM263x processors, you need to use the HwiP drivers. Making a hardware interrupt involves including and declaring required headers and objects. Next creating the ISR function. Then you need to configure the interrupt so it is conncected to the list of ISRs and to the ISR function. Lastly constructing the interrupt and calling it.
