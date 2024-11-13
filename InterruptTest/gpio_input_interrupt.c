@@ -85,9 +85,9 @@ void gpio_input_interrupt_main(void *args)
     HwiP_Params_init(&hwiPrms);                                  // Initializes interrupt object to be able to be used
     hwiPrms.intNum   = intrNum;                                  // .intNum sets the location of the interrupt in memory. Location is set to one linked with GPIO push button
     hwiPrms.callback = &GPIO_bankIsrFxn;                         // Links the interrupt function to interrupt object
-    hwiPrms.args     = (void *) pinNum;                          // Links GPIO pin to interrupt object
+    hwiPrms.args     = (void *) pinNum;                          // Passes this number as parameter when interrupt called
     /* GPIO interrupt is a pulse type interrupt */
-//    hwiPrms.isPulse  = TRUE;                                     // Sets that the interrupt to enter on the rising edge of clock cycle
+//    hwiPrms.isPulse  = TRUE;                                   // Sets that the interrupt to enter on the rising edge of clock cycle, commented out for this example
     retVal = HwiP_construct(&gGpioHwiObject, &hwiPrms);          // Constructs Interrupt and sets it to be active
     DebugP_assert(retVal == SystemP_SUCCESS );
 
@@ -121,7 +121,7 @@ static void GPIO_bankIsrFxn(void *args)
     /* Per pin interrupt handling */
 //    if(intrStatus & pinMask)
 //    {
-//        gGpioIntrDone++;
+//        gGpioIntrDone++;        // Commented out and altered to immediately increase when ISR is entered into.
 //    }
     gGpioIntrDone++;
 }
