@@ -1,0 +1,35 @@
+[C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc_tmp] Parsing file ...
+Found section 0 with adddress 0x00000000, size 0x00000040 bytes
+Found section 1 with adddress 0x7004d5c0, size 0x00005f60 bytes
+Found section 2 with adddress 0x70053520, size 0x000008b8 bytes
+Found section 3 with adddress 0x70053dd8, size 0x00000980 bytes
+Found section 4 with adddress 0x70054758, size 0x00000430 bytes
+Found section 5 with adddress 0x70054b88, size 0x00000218 bytes
+Found section 6 with adddress 0x70054da0, size 0x00000190 bytes
+Found section 7 with adddress 0x70054f30, size 0x00000008 bytes
+Found section 8 with adddress 0x70054f38, size 0x00000358 bytes
+[C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc_tmp] Found 9 sections. 9 are non-XIP sections, 0 are XIP sections, NON-XIP entryPoint = 0x00000000
+Merging section @ 0x70053520 of size 0x000008b8, with section @ 0x7004d5c0 of size 0x00005f60
+Merging section @ 0x70053dd8 of size 0x00000980, with section @ 0x7004d5c0 of size 0x00006818
+Merging section @ 0x70054758 of size 0x00000430, with section @ 0x7004d5c0 of size 0x00007198
+Merging section @ 0x70054b88 of size 0x00000218, with section @ 0x7004d5c0 of size 0x000075c8
+Merging section @ 0x70054da0 of size 0x00000190, with section @ 0x7004d5c0 of size 0x000077e0
+Merging section @ 0x70054f30 of size 0x00000008, with section @ 0x7004d5c0 of size 0x00007970
+Merging section @ 0x70054f38 of size 0x00000358, with section @ 0x7004d5c0 of size 0x00007978
+Writing section header  #0, adddress 0x00000000, size 0x00000040 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x00000000, size 0x00000040 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section header  #1, adddress 0x7004d5c0, size 0x00007cd0 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x7004d5c0, size 0x00005f60 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x70053520, size 0x000008b8 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x70053dd8, size 0x00000980 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x70054758, size 0x00000430 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x70054b88, size 0x00000218 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x70054da0, size 0x00000190 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x70054f30, size 0x00000008 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+Writing section data with adddress 0x70054f38, size 0x00000358 bytes to file [C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc]
+[C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc] Parsing file ...
+Found section 0 with adddress 0x00000000, size 0x00000040 bytes
+Found section 1 with adddress 0x7004d5c0, size 0x00007cd0 bytes
+[C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc] Found 2 sections. 2 are non-XIP sections, 0 are XIP sections, NON-XIP entryPoint = 0x00000000
+[C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc_xip] Parsing file ...
+[C:/Users/steve/workspace_v12/InterruptTest/Release/InterruptTest.rprc_xip] Found 0 sections. 0 are non-XIP sections, 0 are XIP sections, NON-XIP entryPoint = 0x00000000
