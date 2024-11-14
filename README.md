@@ -58,4 +58,9 @@ HwiP_destruct(&nameHwiObj);
 
 ## Explaining Example Code
 The example code under the `\InterruptTest` folder creates a hardware interrupt and has it trigger off of a GPIO push button on the TMDSCNCD263 board itself. The bulk of the code occurs in `gpio_input_interrupt.c` and `board.c` creates helper functions for the former. The code outputs to the debugger console every few seconds the amount of times the button is pushed. When the button is pushed, it triggers the ISR and increments the global variable. The program stops when the global variable reaches 5. `main.c` for the most part just calls the main function within `gpio_input_interrupt.c`.
-  ![Console](Console-Image-Interrupt-Test.png)
+
+<p align="center">Here is an example of the console output you should get:</p>
+
+<p align="center">
+  <img  src="Console-Image-Interrupt-Test.png">
+</p>
