@@ -27,14 +27,14 @@ This is the compiler is used in the example codes of the SDK and within the exam
 To make a hardware interrupt for the AM263x processors, you need to use the HwiP drivers. Making a hardware interrupt involves including and declaring required headers and objects. Next, creating the ISR function. Then you need to configure the interrupt so it is conncected to the list of ISRs and to the ISR function. Lastly, construct the interrupt and call it and destruct it when finished.
 
 The includes and declaration of headers and objects looks as follows:
-```
+```c
 #include <kernel/dpl/HwiP.h>
 HwiP_Object nameHwiObject;
 HwiP_Params hwiPrms;  
 ```
 
 Creating the ISR function follows the following form:
-```
+```c
 static void ISRName(void *args)
 {
   // Whatever actions planned for ISR
@@ -42,7 +42,7 @@ static void ISRName(void *args)
 ```
 
 Paramaters for configuring the interrupt are done using hwiPrms and done as so in this example:
-```
+```c
 HwiP_Params_init(&hwiPrms);                                  // Initializes interrupt object to be able to be used
 hwiPrms.intNum   = intrNum;                                  // .intNum sets the location of the interrupt in memory. Location is set to one linked with GPIO push button
 hwiPrms.callback = &GPIO_bankIsrFxn;                         // Links the interrupt function to interrupt object
@@ -50,7 +50,7 @@ hwiPrms.args     = (void *) pinNum;                          // passes this numb
 ```
 
 Calling the ISR can be done manually through `HwiP_post(intrNum)` or triggered via GPIO input change based on how you configure said GPIO pin in the syscfg file on Code Composer Studio. Constructing, calling the ISR and destructing the ISR have the following format:
-```
+```c
 HwiP_construct(&nameHwiObject, &hwiPrms);
 HwiP_post(intrNum);
 HwiP_destruct(&nameHwiObj);
