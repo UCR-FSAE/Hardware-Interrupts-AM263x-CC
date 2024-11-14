@@ -26,6 +26,9 @@ This is the compiler is used in the example codes of the SDK and within the exam
 ## HwiP API Drivers
 To make a hardware interrupt for the AM263x processors, you need to use the HwiP drivers. Making a hardware interrupt involves including and declaring required headers and objects. Next, creating the ISR function. Then you need to configure the interrupt so it is conncected to the list of ISRs and to the ISR function. Lastly, construct the interrupt and call it and destruct it when finished.
 
+You can find the API driver documentation for the AM263x processors [HERE.](https://software-dl.ti.com/mcu-plus-sdk/esd/AM263X/08_02_00_28/exports/docs/api_guide_am263x/modules.html)
+ The documentation for the HwiP drivers is under "APIs for HW Interrupts".
+
 The includes and declaration of headers and objects looks as follows:
 ```c
 #include <kernel/dpl/HwiP.h>
