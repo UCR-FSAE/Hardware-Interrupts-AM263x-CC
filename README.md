@@ -13,7 +13,7 @@ This guide walks through creating an interrupt that is triggered by a GPIO volta
 ## Needed Software and Hardware
 
 ### Code Composer Studio
-This is an IDE that allows us to create code, compile, debug, as well use the syscfg file to adjust pinout configurations and MACROs for the board. [Link](https://www.ti.com/tool/CCSTUDIO#downloads)
+This is an IDE that allows us to create code, compile, debug, as well use the syscfg file to adjust pinout configurations and MACROs for the board. NOTE: BE SURE TO ADD AM263x SITARA BOARD IN CHECK BOX ON INSTALL. [Link](https://www.ti.com/tool/CCSTUDIO#downloads)
 ### TMDSCNCD263 Control Card and Dock, Micro-USB, USB-C Power Cord
 This is all the hardware you need in order to properly use the control card. The micro-USB connects the board to your computer and how you flash code. The dock the TMDSCNCN263 connects to has to be powered through a USB-C conncetion. The board must be powered with about 5V and 3A.
 ### AM263x SDK
